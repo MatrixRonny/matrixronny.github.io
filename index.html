@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width" />
+
     <title>Power Plan</title>
     <link rel="shortcut icon" type="image/x-icon" href="PowerPlan-logo.png" />
 
@@ -16,18 +18,62 @@
             font-weight: 600;
             text-shadow: #333 1px 1px 2px;
             text-align: center;
-
             background-image: url('coming-soon.jpeg');
             background-size: cover;
             background-position: center center;
         }
 
+        div.content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
         p.title {
             font-size: 36px;
+            margin-bottom: 180px;
         }
 
         p.intro {
             font-size: 40px;
+            margin-bottom: 76px;
+        }
+
+        input[type=text] {
+            height: 40px;
+            width: 400px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        button {
+            height: 40px;
+            width: 300px;
+            background: #ff0081;
+            border: 2px solid white;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        @media screen and (max-width: 1080px) {
+            p.title {
+                font-size: 26px;
+                margin-top: 100px;
+            }
+
+            p.intro {
+                font-size: 20px;
+                margin-bottom: 56px;
+            }
+
+            input[type=text] {
+                width: 360px;
+            }
+
+            button {
+                width: 240px;
+            }
         }
     </style>
 
@@ -39,21 +85,23 @@
 </head>
 
 <body>
-    <p class="title">Power Plan is Coming Soon</p>
+    <div class="content">
+        <p class="title">Power Plan is Coming Soon</p>
 
-    <p class="intro">
-        Does you gym have a Power Plan?<br/>
-        Subscribe for further announcements.
-    </p>
-
-    <form>
-        <p>
-            <input type="text" placeholder="Provide your email here." />
+        <p class="intro">
+            Does you gym have a Power Plan?<br />
+            Subscribe for further announcements.
         </p>
 
-        <p>
-            <button>Subscribe</button>
-        </p>
-    </form>
+        <form>
+            <p>
+                <input type="text" placeholder="Provide your email here." />
+            </p>
+
+            <p>
+                <button>Subscribe</button>
+            </p>
+        </form>
+    </div>
 </body>
 </html>
