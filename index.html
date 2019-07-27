@@ -1,262 +1,59 @@
-<!DOCTYPE html lang="en-US">
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <title>Power Plan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="PowerPlan-logo.png" />
 
-    <title>Yoga Plan</title>
-    <meta name="description" content="Yoga Plan. Please be patient. Thank you.">
-    <link rel="stylesheet" href="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/css/normalize.css">
-    <link rel="stylesheet" href="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/css/foundation.css">
-    <link rel="stylesheet" href="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/css/animate.css">
-    <link rel="stylesheet" href="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/css/icomoon.css">
-    <link rel="stylesheet" href="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
-	<script src="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/js/vendor/custom.modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
 
-<!-- Default WordPress jQuery lib (sorry, it just have to go this way because of template system limitations) -->
+    <style>
+        body {
+            color: white;
+            font-family: Raleway;
+            font-weight: 600;
+            text-shadow: #333 1px 1px 2px;
+            text-align: center;
 
-    <script src="wp-includes/js/jquery/jquery.js"></script>
+            background-image: url('coming-soon.jpeg');
+            background-size: cover;
+            background-position: center center;
+        }
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=Abel&subset=latin,latin-ext' rel='stylesheet' type='text/css'><style>body {background: !important;}#days, #hours, #minutes, #seconds { color: #ffffff; }.timer-bottom { color: #ffffff; }.button {background:#9e0039 !important;}.button:hover {background:#9e0039 !important;}.nifty-title {font-family:'Raleway' !important;}.nifty-coming-soon-message {font-family:'Raleway' !important;}.timer-item {font-family:'Raleway' !important;}body p, .nifty-inform, .nifty-success, .nifty-error, input {font-family:'Abel' !important;}</style><link href='wp-content/plugins/weforms/assets/wpuf/css/frontend-forms.css' rel='stylesheet' type='text/css'>
-<link href='wp-content/plugins/weforms/assets/wpuf/vendor/sweetalert2/dist/sweetalert2.css' rel='stylesheet' type='text/css'>
-<link href='wp-content/plugins/weforms/assets/wpuf/css/jquery-ui-1.9.1.custom.css' rel='stylesheet' type='text/css'>
-<script src='wp-includes/js/wp-embed.min.js' type='text/javascript'></script>
-<script src='wp-includes/js/jquery/ui/core.min.js' type='text/javascript'></script>
-<script src='wp-includes/js/jquery/ui/datepicker.min.js' type='text/javascript'></script>
-<script src='wp-includes/js/jquery/ui/widget.min.js' type='text/javascript'></script>
-<script src='wp-includes/js/jquery/ui/mouse.min.js' type='text/javascript'></script>
-<script src='wp-includes/js/jquery/ui/slider.min.js' type='text/javascript'></script>
-<script src='wp-includes/js/jquery/ui/sortable.min.js' type='text/javascript'></script>
-<script src='wp-content/plugins/weforms/assets/js/weforms.min.js' type='text/javascript'></script>
-<script>/* <![CDATA[ */
-    var wpuf_frontend = {"ajaxurl":"Static/wp-admin/admin-ajax.php","error_message":"Please fix the errors to proceed","nonce":"77a867d2e9","word_limit":"Word limit reached"};
-    var error_str_obj = {"required":"is required","mismatch":"does not match","validation":"is not valid","duplicate":"requires a unique entry and this value has already been used"};
-    var wpuf_frontend_upload = {"confirmMsg":"Are you sure?","delete_it":"Yes, delete it","cancel_it":"No, cancel it","nonce":"77a867d2e9","ajaxurl":"Static/wp-admin/admin-ajax.php","plupload":{"url":"Static/wp-admin/admin-ajax.php?nonce=827fd0a003","flash_swf_url":"Static/wp-includes/js/plupload/plupload.flash.swf","filters":[{"title":"Allowed Files","extensions":"*"}],"multipart":true,"urlstream_upload":true,"warning":"Maximum number of files reached!","size_error":"The file you have uploaded exceeds the file size limit. Please try again.","type_error":"You have uploaded an incorrect file type. Please try again."}};
-    /* ]]> */</script>
+        p.title {
+            font-size: 36px;
+        }
 
+        p.intro {
+            font-size: 40px;
+        }
+    </style>
 
+    <script>
+        $(document).ready(function () {
+            //TODO: Implement animation.
+        });
+    </script>
 </head>
-<body class="home blog wp-embed-responsive hfeed image-filters-enabled">
-    <div class="nifty-main-wrapper" id="nifty-full-wrapper">
 
-<!-- Page Preloader -->
+<body>
+    <p class="title">Power Plan is Coming Soon</p>
 
-    
-        <div class="nifty-content-wrapper">
-            <header class="nifty-row ">
-                <div class="large-12 columns text-center">
+    <p class="intro">
+        Does you gym have a Power Plan?<br/>
+        Subscribe for further announcements.
+    </p>
 
-<!-- Logo and navigation  -->
-	<div class="nifty-logo"><h1 class="nifty-title">Our Website is Coming Soon</h1></div>
+    <form>
+        <p>
+            <input type="text" placeholder="Provide your email here." />
+        </p>
 
-
-	
-                  </div>
-              </div>
-            </header>
-            <div class="nifty-row">
-            <div class="large-10 small-centered columns text-center">
-            <div class="nifty-coming-soon-message">
-                   <div id="animated_intro" class="tlt">
-                    <ul class="texts" style="display: none">
-                      <li>We'll be here soon with our app suite. Subscribe to be notified.</li>
-                      <li>Stay tuned for our awesome app launch. Be the first to get notified.</li>
-                    </ul>
-                  </div>
-                  </div>
-            </div>
-            </div>
-
-<!-- Timer Section -->
-
-        
-<!-- Content Section -->
-
-        <div class="nifty-content-full">
-            <div class="nifty-row">
-
-<!-- Slider Section -->
-
-		<ul class="bxslider">
-
-<!-- Slide One - Subscribe Here -->
-
-    <li><section class="large-12 columns">
-        <script type="text/javascript">
-            if ( typeof wpuf_conditional_items === 'undefined' ) {
-                window.wpuf_conditional_items = [];
-            }
-
-            if ( typeof wpuf_plupload_items === 'undefined' ) {
-                window.wpuf_plupload_items = [];
-            }
-
-            if ( typeof wpuf_map_items === 'undefined' ) {
-                window.wpuf_map_items = [];
-            }
-        </script>
-
-        <form class="wpuf-form-add weforms-6  wpuf-theme-style" action="" method="post"   id="">
-
-            <ul class="wpuf-form form-label-hidden">
-
-                        <li class="wpuf-el email field-size-large" data-label="Email Address">
-                    <div class="wpuf-label">
-            <label for="email_6">Email Address <span class="required">*</span></label>
-        </div>
-        
-            <div class="wpuf-fields">
-                <input
-                    id="email_6"
-                    type="email"
-                    class="email  wpuf_email_6"
-                    data-duplicate=""
-                    data-required="yes"
-                    data-type="email"
-                    name="email"
-                    placeholder="Insert email here"
-                    value=""
-                    size="40"
-                    autocomplete="email"
-                />
-                            </div>
-        </li>
-                <li class="wpuf-submit">
-            <div class="wpuf-label">
-                &nbsp;
-            </div>
-
-            <input type="hidden" id="_wpnonce" name="_wpnonce" value="1177fcb780" /><input type="hidden" name="_wp_http_referer" value="/" />
-            <input type="hidden" name="form_id" value="6">
-            <input type="hidden" name="page_id" value="1">
-            <input type="hidden" name="action" value="weforms_frontend_submit">
-
-                            <input type="hidden" name="weforms-front-report" value="no">
-            
-            
-            <input type="submit" class="weforms_submit_btn" name="submit" value="Submit" />
-
-        </li>
-                </ul>
-
-        </form>
-
-        </li>
-<!-- Slide Two - About Us -->
-
-	
-<!-- Slide Three - Social links -->
-
-      <section class="large-12 columns"><div class="nifty-row"></div></section>
-
-    </ul>
-  </div>
-</div>
-</div>
-
-
-<!-- jQuery Vegas Background Slider -->
-
-<script>
-	jQuery(document).ready(function($){
-	$('#nifty, body').vegas({
-		 animation: 'random',
-		 cover: true,
-		 animationDuration: '2000',
-		 timer: false,
-		 transition: 'fade2',
-		 delay:10000,
-		 opacity:0.8,
-		 overlay:'wp-content/plugins/nifty-coming-soon-and-under-construction-page/admin//assets/images/patterns/17.png',
-			slides: [
-				{ src:'wp-content/uploads/2019/05/WhatsApp-Image-2019-05-08-at-10.03.12.jpeg'},
-				{ src:'wp-content/uploads/2019/05/WhatsApp-Image-2019-05-08-at-10.03.12.jpeg'},
-				{ src:'wp-content/uploads/2019/05/WhatsApp-Image-2019-05-08-at-10.03.12.jpeg'},
-				{ src:'wp-content/uploads/2019/05/WhatsApp-Image-2019-05-08-at-10.03.12.jpeg'}
-			 ]
-    }); });
-	</script>
-
-<!-- Footer js scripts -->
-
-<script src="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/js/scripts.js"></script>
-<script src="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/js/jquery.bxslider.min.js"></script>
-<script src="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/js/vegas.min.js"></script>
-<script src="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/js/jquery.fittext.js"></script>
-<script src="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/js/jquery.textillate.js"></script>
-<script src="wp-content/plugins/nifty-coming-soon-and-under-construction-page/template/assets/js/jquery.lettering.js"></script>
-
-<script>
-   jQuery(document).ready(function($){
-	 $('.tlt').textillate({
-  selector: '.texts',
-  loop: true,
-  minDisplayTime: 2500,
-  autoStart: true,
-  outEffects: [ 'bounceOut' ],
-
-  // in animation settings
-  in: {
-    effect: 'none',
-    delayScale: 1.5,
-    delay: 50,
-    sync: false,
-    shuffle: true
-  },
-
-  // out animation settings.
-  out: {
-    effect: 'bounceOut',
-    delayScale: 1.5,
-    delay: 150,
-    sync: false,
-    shuffle: true,
-  }
-});
-	});
-	</script>
-<!-- Google Analytics Code -->
-
-
-<!-- Additional CSS -->
-
-<style>.nifty-logo {
-    width: 700px !important;
-}
-
-#email_6{
-     height: 3em;
-    border: 0px;
-    border-radius: 0px;
-    font-size: 14px;
-    text-align: center;
-    font-family: Rale;
-    font-family: 'Roboto Slab', sans-serif !important;
-}
-
-.weforms_submit_btn{
-    border: 0px;
-    color: #fff;
-    background: #ceadd8;
-    font-style: normal;
-    letter-spacing: 1px;
-    box-shadow: none;
-    font-size: 24px;
-    line-height: 24px;
-    max-width: 300px !important;
-    width: 200px;
-    padding: 10px 0px;
-}
-
-.nifty-coming-soon-message{   
-    font-size: 3em;
-    color: #FFFFFF;
-    margin: 90px auto 50px;
-    text-shadow: #333 1px 1px 2px;
-    -webkit-text-stroke: 0.20px;
-    line-height: 60px;
-}</style>
+        <p>
+            <button>Subscribe</button>
+        </p>
+    </form>
 </body>
 </html>
