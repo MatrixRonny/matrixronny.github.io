@@ -16,7 +16,7 @@
             color: white;
             font-family: Raleway;
             font-weight: 600;
-            text-shadow: #333 1px 1px 2px;
+            text-shadow: #333 1.5px 1.5px 3px;
             text-align: center;
             background-image: url('coming-soon.jpeg');
             background-size: cover;
@@ -27,52 +27,59 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            justify-content: center;
         }
 
         p.title {
-            font-size: 36px;
-            margin-bottom: 180px;
+            font-size: 6vh;
+            margin-bottom: 20vh;
         }
 
         p.intro {
-            font-size: 40px;
-            margin-bottom: 76px;
+            font-size: 3vw;
+            margin-bottom: 10vh;
         }
 
         input[type=text] {
-            height: 40px;
-            width: 400px;
+            height: 6vh;
+            width: 30vw;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 4vh;
         }
 
         button {
-            height: 40px;
-            width: 300px;
+            height: 6vh;
+            width: 24vw;
+            margin-bottom: 8vh;
             background: #ff0081;
             border: 2px solid white;
             color: white;
-            font-size: 20px;
+            font-size: 3vh;
             font-weight: 400;
         }
 
-        @media screen and (max-width: 1080px) {
+        @media screen and (max-width: 1000px) {
+            body {
+                background-size: 1000px 100%;
+            }
+
             p.title {
-                font-size: 26px;
-                margin-top: 100px;
+                font-size: 7vw;
+                margin-bottom: 20vh;
             }
 
             p.intro {
-                font-size: 20px;
-                margin-bottom: 56px;
+                font-size: 5vw;
+                margin-bottom: 12vh;
             }
 
             input[type=text] {
-                width: 360px;
+                width: 80vw;
             }
 
             button {
-                width: 240px;
+                width: 60vw;
+                margin-bottom: 6vh;
             }
         }
     </style>
