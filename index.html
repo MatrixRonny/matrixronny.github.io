@@ -143,14 +143,14 @@
             $.post(requestUrl)
                 .done(function () {
                     $('#result')
-                        .css('color', 'green')
+                        .css('color', 'lime')
                         .text('You have been subscribed successfully.');
                 })
                 .fail(function (jqXHR) {
                     if (jqXHR.status === 409) {
                         $('#result')
-                            .css('color', 'yellow')
-                            .text('Your are already subscribed.');
+                            .css('color', 'gold')
+                            .text('You are already subscribed.');
                     } else {
                         $('#result')
                             .css('color', 'red')
