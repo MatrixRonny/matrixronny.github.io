@@ -146,7 +146,7 @@
                         .css('color', 'green')
                         .text('You have been subscribed successfully.');
                 })
-                .fail(function (data, textStatus, jqXHR) {
+                .fail(function (jqXHR) {
                     if (jqXHR.status === 409) {
                         $('#result')
                             .css('color', 'yellow')
