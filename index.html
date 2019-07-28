@@ -47,6 +47,11 @@
             margin-bottom: 4vh;
         }
 
+        #result {
+            height: 16vh;
+            margin-bottom: 6vh;
+        }
+
         button {
             height: 6vh;
             width: 24vw;
@@ -77,9 +82,13 @@
                 width: 80vw;
             }
 
+            #result {
+                height: 14vh;
+                margin: 0 10vw;
+            }
+
             button {
                 width: 60vw;
-                margin-bottom: 6vh;
             }
         }
     </style>
@@ -100,7 +109,7 @@
             Subscribe for further announcements.
         </p>
 
-        <form>
+        <form onsubmit="return false;">
             <p>
                 <input name="email" type="text" placeholder="Provide your email here." />
             </p>
@@ -145,7 +154,7 @@
                     } else {
                         $('#result')
                             .css('color', 'red')
-                            .text('An error has occurred. Please refresh page and try again');
+                            .text('An error has occurred. Please refresh page and try again.');
                     }
                 })
         }
