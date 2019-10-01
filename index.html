@@ -192,10 +192,12 @@
                     if (jqXHR.status === 409) {
                         $('#result')
                             .css('color', 'yellow')
+                            .css('text-shadow', '0px 0px 2px gray')
                             .text('You are already subscribed.');
                     } else {
                         $('#result')
                             .css('color', 'red')
+                            .css('text-shadow', '0px 0px 2px white')
                             .text('An error has occurred. Please refresh page and try again.');
                     }
                 })
