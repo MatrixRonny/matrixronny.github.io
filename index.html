@@ -54,7 +54,7 @@
         .email-group #errorMessage {
             color: red;
             font-size: 24px;
-            text-shadow: 0px 0px 4px white;
+            text-shadow: 0px 0px 2px white;
             margin-top: 4px;
             visibility: hidden;
         }
@@ -180,7 +180,7 @@
             var xhrRequest = {
                 type: "POST",
                 url: requestUrl,
-                timeout: 5 * 60 * 1000
+                timeout: 3 * 60 * 1000
             }
             $.ajax(xhrRequest)
                 .done(function () {
