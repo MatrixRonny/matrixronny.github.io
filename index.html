@@ -6,6 +6,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="PowerPlan-logo.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -16,11 +19,15 @@
             color: white;
             font-family: Raleway;
             font-weight: 600;
-            text-shadow: #333 1.5px 1.5px 3px;
+            text-shadow: #000 0.5px 0.5px 2px;
             text-align: center;
             background-image: url('coming-soon.jpeg');
             background-size: cover;
-            background-position: center center;
+        }
+
+        .background {
+            background-color: rgba(0,0,0,0.2);
+            height: 100%;
         }
 
         div.content {
@@ -31,33 +38,36 @@
         }
 
         p.title {
-            font-size: 6vh;
-            margin-bottom: 20vh;
+            font-size: 32px;
+            margin-top: 20px;
+            margin-bottom: 30px;
         }
 
         p.intro {
-            font-size: 3vw;
+            font-size: 28px;
             margin-bottom: 10vh;
         }
 
         .email-group {
-            margin-bottom: 4vh;
+            margin-bottom: 1vh;
         }
 
-        .email-group input[type=text] {
-            height: 6vh;
-            width: 34vw;
-            font-size: 24px;
-            text-align: center;
-        }
+            .email-group input[type=text] {
+                color: black;
+                font-size: 16px;
+                padding-left: 16px;
+                height: 8vh;
+                width: 80%;
+                border-radius: 6px;
+            }
 
-        .email-group #errorMessage {
-            color: red;
-            font-size: 24px;
-            text-shadow: 0px 0px 2px white;
-            margin-top: 4px;
-            visibility: hidden;
-        }
+            .email-group #errorMessage {
+                color: #CC0000;
+                font-size: 18px;
+                text-shadow: 0px 0px 2px white;
+                margin-top: 4px;
+                visibility: hidden;
+            }
 
         #result {
             font-size: 20px;
@@ -66,36 +76,58 @@
             margin-bottom: 6vh;
         }
 
+        .check-consent {
+            margin: 10px 10%;
+        }
+
         button {
-            height: 6vh;
-            width: 24vw;
-            margin-bottom: 8vh;
-            background: #ff0081;
-            border: 2px solid white;
+            height: 8vh;
+            margin: auto;
+            width: 80%;
+            background: #e9597c;
             color: white;
             font-size: 3vh;
             font-weight: 400;
+            border-radius: 6px;
         }
 
-        @media screen and (max-width: 1000px) {
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #d2d2d2;
+            font-size: 16px;
+            text-align: left;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11, Microsoft Edge */
+            color: #d2d2d2;
+            font-size: 16px;
+            text-align: left;
+            padding-left: 16px;
+        }
+
+        .logo {
+            height: 180px;
+            margin: auto;
+            padding-top: 60px;
+        }
+
+        @media screen and (max-width: 1200px) {
             body {
                 background-size: 1000px 100%;
             }
 
             p.title {
-                font-size: 7vw;
-                margin-bottom: 20vh;
+                font-size: 26px;
             }
 
             p.intro {
-                font-size: 5vw;
-                margin-bottom: 12vh;
+                font-size: 20px;
+                margin-bottom: 6vh;
             }
 
             .email-group input[type=text] {
-                width: 80vw;
-                height: 40px;
-                font-size: 16px;
+                font-size: 12px;
+                height: 48px;
             }
 
             .email-group #errorMessage {
@@ -105,13 +137,119 @@
             #result {
                 font-size: 17px;
                 height: 14vh;
-                margin: 0 8vw;
+                margin: 0 10%;
             }
 
             button {
-                font-size: 22px;
-                width: 60vw;
+                font-size: 16px;
                 height: 48px;
+                width: 100%;
+            }
+
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #d2d2d2;
+                font-size: 12px;
+                text-align: left;
+                opacity: 1; /* Firefox */
+            }
+
+            :-ms-input-placeholder { /* Internet Explorer 10-11, Microsoft Edge */
+                color: #d2d2d2;
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .logo {
+                height: 180px;
+                margin: auto;
+                padding-top: 60px;
+            }
+        }
+    </style>
+
+    <style>
+        /* Code copied from: https://freefrontend.com/css-checkboxes/ Andreas Storm, April 18, 2018*/
+
+        .cbx {
+            margin: auto;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: pointer;
+        }
+
+            .cbx span {
+                display: inline-block;
+                vertical-align: middle;
+                transform: translate3d(0, 0, 0);
+            }
+
+                .cbx span:first-child {
+                    position: relative;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 3px;
+                    transform: scale(1);
+                    vertical-align: middle;
+                    border: 1px solid #667CA8;
+                    background-color: #9098A9;
+                    transition: all 0.2s ease;
+                }
+
+                    .cbx span:first-child svg {
+                        position: absolute;
+                        top: 3px;
+                        left: 2px;
+                        fill: none;
+                        stroke: #FFFFFF;
+                        stroke-width: 2;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-dasharray: 16px;
+                        stroke-dashoffset: 16px;
+                        transition: all 0.3s ease;
+                        transition-delay: 0.1s;
+                        transform: translate3d(0, 0, 0);
+                    }
+
+                    .cbx span:first-child:before {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        background: #506EEC;
+                        display: block;
+                        transform: scale(0);
+                        opacity: 1;
+                        border-radius: 50%;
+                    }
+
+                .cbx span:last-child {
+                    padding-left: 8px;
+                }
+
+            .cbx:hover span:first-child {
+                border-color: #506EEC;
+            }
+
+        .inp-cbx:checked + .cbx span:first-child {
+            background: #506EEC;
+            border-color: #506EEC;
+            animation: wave 0.4s ease;
+        }
+
+            .inp-cbx:checked + .cbx span:first-child svg {
+                stroke-dashoffset: 0;
+            }
+
+            .inp-cbx:checked + .cbx span:first-child:before {
+                transform: scale(3.5);
+                opacity: 0;
+                transition: all 0.6s ease;
+            }
+
+        @keyframes wave {
+            50% {
+                transform: scale(0.9);
             }
         }
     </style>
@@ -124,24 +262,61 @@
 </head>
 
 <body>
-    <div class="content">
-        <p class="title">Power Plan is Coming Soon</p>
+    <div class="container background">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8"><img class="logo" src="PowerPlan-logo.png"></div>
+            <div class="col-sm-2"></div>
+        </div>
 
-        <p class="intro">
-            Does you gym have a Power Plan?<br />
-            Subscribe for further announcements.
-        </p>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8"><p class="title">PowerPlan is Coming Soon</p></div>
+            <div class="col-sm-2"></div>
+        </div>
 
-        <form onsubmit="return false;">
-            <div class="email-group">
-                <input name="email" type="text" placeholder="Provide your email here." onkeypress="email_changed()" />
-                <div id="errorMessage">Please provide valid email.</div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p class="intro">
+                    Does your gym have a PowerPlan?</br>
+                    Stay tunned for an awesome planning tool tailored for your gym.
+                </p>
             </div>
+            <div class="col-sm-2"></div>
+        </div>
 
-            <p id="result" style="text-shadow: none; margin: 0 20vw">
-                <button type="button" onclick="submit_click()">Subscribe</button>
-            </p>
-        </form>
+        <div class="row">
+            <form onsubmit="return false;">
+                <div class="email-group">
+                    <input name="email" type="text" placeholder="Interested? Leave us your email to get notified" onkeypress="email_changed()" />
+
+                    <div class="check-consent" translate="no" style="text-align: left;">
+                        <input class="inp-cbx" id="cbx" type="checkbox" style="display: none;">
+                        <label class="cbx" for="cbx">
+                            <span style="vertical-align: top;">
+                                <svg width="12px" height="10px" viewBox="0 0 12 10">
+                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                </svg>
+                            </span>
+
+                            <span style="width: 90%">
+                                By ticking the checkbox you agree to receive marketing info on the behalf of powerplan.io.
+                                Your personal data will be processed according to powerplan.io personal data policy.
+                                If you decide to take back your personal data manipulation approval, your decision will be
+                                effective only from that moment on.
+                            </span>
+                        </label>
+                    </div>
+
+                    <div id="errorMessage">Please provide valid email.</div>
+
+                    <p id="result" style="text-shadow: none; ">
+                        <button type="button" onclick="submit_click()">Subscribe</button>
+                    </p>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script>
@@ -161,14 +336,25 @@
         }
 
         function submit_click() {
-            let apiUrl = "https://powerplan.azurewebsites.net/api/subscribe";
+            let apiUrl = "https://test-powerplan.azurewebsites.net/api/subscribe";
             //var formParams = getFormJson();
             //var requestUrl = apiUrl + "?email=" + formParams.email;
+
+            var errorMessage = document.getElementById("errorMessage");
+            errorMessage.style.visibility = 'hidden';
 
             var emailValue = document.getElementsByName("email")[0].value;
             var emailValue = emailValue.trim();
             if (!validateEmail(emailValue)) {
-                document.getElementById("errorMessage").style.visibility = "visible";
+                errorMessage.style.visibility = 'visible';
+                errorMessage.innerText = 'Please provide valid email.';
+                return;
+            }
+
+            var isAgreed = $('#cbx').is(':checked');
+            if (!isAgreed) {
+                errorMessage.style.visibility = 'visible';
+                errorMessage.innerText = 'Please agree with terms.';
                 return;
             }
 
@@ -182,18 +368,25 @@
                 url: requestUrl,
                 timeout: 3 * 60 * 1000
             }
+
             $.ajax(xhrRequest)
                 .done(function () {
                     $('#result')
                         .css('color', 'green')
                         .text('You have been subscribed successfully.');
                 })
-                .fail(function (jqXHR) {
+                .fail(function (jqXHR, textStatus, errorThrown) {
                     if (jqXHR.status === 409) {
                         $('#result')
                             .css('color', 'yellow')
                             .css('text-shadow', '0px 0px 2px gray')
                             .text('You are already subscribed.');
+                    } else if (jqXHR.responseText) {
+                        var errorMessage = JSON.parse(jqXHR.responseText).Message
+                        $('#result')
+                            .css('color', 'yellow')
+                            .css('text-shadow', '0px 0px 2px gray')
+                            .text(errorMessage);
                     } else {
                         $('#result')
                             .css('color', 'red')
