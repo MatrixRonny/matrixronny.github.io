@@ -1,0 +1,65 @@
+Provided a developer's CV, determine the software development domains that the developer has experience with. For each domain, specify what technologies the developer knows. The same technology can be part of multiple domains. At the end of the discussion, write back the extracted information. Start by requesting the CV.
+  
+----------
+
+--- Begin CV contents ---
+Freelance work experience
+Freelance web developer at E-Contract BVBA
+2019-06 - present
+Continued development of the CRM web application which I worked on for several years in
+the past. In addition, the position also includes maintenance of a Wordpress front-end
+application as well as calculation and comparison systems that are used in the background.
+Functional requirements: customer, contract and billing management, comprehensive
+reporting in HTML views as well as extensive CSV exports, lead aggregation and follow-up
+campaigns
+Used technologies: Git, PHP 5.6-7, PHPUnit 4-5, MySQL, Apache2 web server, HTML/CSS,
+Laravel 5, Wordpress 4, CakePHP, jQuery 2.2, NPM, Grunt, SASS, REST
+Freelance web developer at Koalaboox BVBA
+2019-03 – 2019-05
+Implementation of several new modules into an existing application, among which a public
+facing API and an anti-fraud system.
+Functional requirements: Customer management, invoice management, anti-fraud
+detection
+Used technologies: Git, Docker, PHP 7.2, Laravel 5, MySQL, Apache web server, SASS,
+REST, Codeception, OAuth, Laravel Passport, microservices
+Freelance web developer at Yappa BVBA
+2018-01 – 2018-07
+Development of custom web applications in PHP using the the Symfony framework. While
+the main focus of my responsibilities were focussed on back-end development, there was
+also a significant front-end component within these projects.
+Functional requirements: stock and stock management, QA ticket management and
+follow-up, custom modules for document ant quality label registration and tracking and
+extensive dashboards with statistics and reporting
+Used technologies: Git, Docker, Docker Compose, PHP 7.2, Symfony2, Symfony3, Doctrine,
+PHPUnit, MySQL, Apache web server, Mailhog, LESS, SASS, REST, Webpack, VueJS, jQuery
+Freelance web developer at Hiddit BVBA
+2017-06 – 2017-12
+Maintenance and Development of custom web applications in PHP and Wordpress to
+facilitate the growth of a New e-commerce startup in the food supplement industry.
+Functional requirements: order follow-up and reporting, workout planning
+Used technologies: Git, PHP 7.2, Laravel 5, PHPUnit, MySQL, Webpack, VueJS, jQuery
+Freelance web developer at E-Contract BVBA
+2013-10 – 2017-04
+Development of a CRM application in order to manage the internal operations of the
+company. This includes customer management, contract management, reporting, billing
+and much more. This project is currently in development for over three years and is
+actively used on a daily basis by 10 people.
+Functional requirements: customer, contract and billing management, comprehensive
+reporting in HTML views as well as extensive CSV exports, lead aggregation and follow-up
+campaigns, several complicated imports of data from old, deprecated systems into the
+CRM
+Used technologies: Git, PHP 5.6-7, PHPUnit 4-5, MySQL, Apache2 web server, HTML/CSS,
+Laravel 4-5, Twilio, jQuery 2.2, Algolia, NPM, Grunt, SASS, REST
+Employee work experience
+Agile coach/PHP Developer at Cegeka NV
+2012-10 – 2015-06
+Worked on various projects for multiple customers. The majority of my time was spent on
+the Telenet e-sales project (16 months), where I was responsible for the introduction of
+and training in agile software development methodologies. Some other projects and/or
+customers include Flanders’ Drive (Lommel), VDAB/madewithlove (Brussels), the Flemish
+Government and Trane.
+Java Developer at Cegeka NV
+2012-01 – 2012-09
+Junior member of a team of more than 15 developers, responsible for maintenance and
+development of new features for the Java/J2EE Ventouris application.
+--- End CV contents ---

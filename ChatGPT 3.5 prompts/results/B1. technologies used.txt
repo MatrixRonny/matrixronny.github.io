@@ -1,0 +1,35 @@
+1. Git
+2. PHP (versions 5.6-7.2)
+3. PHPUnit
+4. MySQL
+5. Apache web server
+6. HTML/CSS
+7. Laravel (versions 4-5)
+8. WordPress
+9. CakePHP
+10. jQuery
+11. SASS
+12. REST
+13. NPM
+14. Grunt
+15. Docker
+16. Docker Compose
+17. Codeception
+18. OAuth
+19. Laravel Passport
+20. Microservices
+21. Symfony2
+22. Symfony3
+23. Doctrine
+24. Mailhog
+25. LESS
+26. Webpack
+27. VueJS
+28. Java
+29. JavaScript
+30. SQL Server
+31. NoSQL
+32. Cloud Foundry
+33. Kubernetes
+34. Continuous integration tools
+35. Android app development

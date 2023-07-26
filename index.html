@@ -1,405 +1,331 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
-
-    <title>Power Plan</title>
-    <link rel="shortcut icon" type="image/x-icon" href="PowerPlan-logo.png" />
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-
-    <style>
-        body {
-            color: white;
-            font-family: Raleway;
-            font-weight: 600;
-            text-shadow: #000 0.5px 0.5px 2px;
-            text-align: center;
-            background-image: url('coming-soon.jpeg');
-            background-size: cover;
-        }
-
-        .background {
-            background-color: rgba(0,0,0,0.2);
-            height: 100%;
-        }
-
-        div.content {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        p.title {
-            font-size: 32px;
-            margin-top: 20px;
-            margin-bottom: 30px;
-        }
-
-        p.intro {
-            font-size: 28px;
-            margin-bottom: 10vh;
-        }
-
-        .email-group {
-            margin-bottom: 1vh;
-        }
-
-            .email-group input[type=text] {
-                color: black;
-                font-size: 16px;
-                padding-left: 16px;
-                height: 8vh;
-                width: 80%;
-                border-radius: 6px;
-            }
-
-            .email-group #errorMessage {
-                color: #CC0000;
-                font-size: 18px;
-                text-shadow: 0px 0px 2px white;
-                margin-top: 4px;
-                visibility: hidden;
-            }
-
-        #result {
-            font-size: 20px;
-            font-weight: 800;
-            height: 16vh;
-            margin-bottom: 6vh;
-        }
-
-        .check-consent {
-            margin: 10px 10%;
-        }
-
-        button {
-            height: 8vh;
-            margin: auto;
-            width: 80%;
-            background: #e9597c;
-            color: white;
-            font-size: 3vh;
-            font-weight: 400;
-            border-radius: 6px;
-        }
-
-        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: #d2d2d2;
-            font-size: 16px;
-            text-align: left;
-            opacity: 1; /* Firefox */
-        }
-
-        :-ms-input-placeholder { /* Internet Explorer 10-11, Microsoft Edge */
-            color: #d2d2d2;
-            font-size: 16px;
-            text-align: left;
-            padding-left: 16px;
-        }
-
-        .logo {
-            height: 180px;
-            margin: auto;
-            padding-top: 60px;
-        }
-
-        @media screen and (max-width: 1200px) {
-            body {
-                background-size: 1000px 100%;
-            }
-
-            p.title {
-                font-size: 26px;
-            }
-
-            p.intro {
-                font-size: 20px;
-                margin-bottom: 6vh;
-            }
-
-            .email-group input[type=text] {
-                font-size: 12px;
-                height: 48px;
-            }
-
-            .email-group #errorMessage {
-                font-size: 18px;
-            }
-
-            #result {
-                font-size: 17px;
-                height: 14vh;
-                margin: 0 10%;
-            }
-
-            button {
-                font-size: 16px;
-                height: 48px;
-                width: 100%;
-            }
-
-
-            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                color: #d2d2d2;
-                font-size: 12px;
-                text-align: left;
-                opacity: 1; /* Firefox */
-            }
-
-            :-ms-input-placeholder { /* Internet Explorer 10-11, Microsoft Edge */
-                color: #d2d2d2;
-                font-size: 12px;
-                text-align: left;
-            }
-
-            .logo {
-                height: 180px;
-                margin: auto;
-                padding-top: 60px;
-            }
-        }
-    </style>
-
-    <style>
-        /* Code copied from: https://freefrontend.com/css-checkboxes/ Andreas Storm, April 18, 2018*/
-
-        .cbx {
-            margin: auto;
-            -webkit-user-select: none;
-            user-select: none;
-            cursor: pointer;
-        }
-
-            .cbx span {
-                display: inline-block;
-                vertical-align: middle;
-                transform: translate3d(0, 0, 0);
-            }
-
-                .cbx span:first-child {
-                    position: relative;
-                    width: 18px;
-                    height: 18px;
-                    border-radius: 3px;
-                    transform: scale(1);
-                    vertical-align: middle;
-                    border: 1px solid #667CA8;
-                    background-color: #9098A9;
-                    transition: all 0.2s ease;
-                }
-
-                    .cbx span:first-child svg {
-                        position: absolute;
-                        top: 3px;
-                        left: 2px;
-                        fill: none;
-                        stroke: #FFFFFF;
-                        stroke-width: 2;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-dasharray: 16px;
-                        stroke-dashoffset: 16px;
-                        transition: all 0.3s ease;
-                        transition-delay: 0.1s;
-                        transform: translate3d(0, 0, 0);
-                    }
-
-                    .cbx span:first-child:before {
-                        content: "";
-                        width: 100%;
-                        height: 100%;
-                        background: #506EEC;
-                        display: block;
-                        transform: scale(0);
-                        opacity: 1;
-                        border-radius: 50%;
-                    }
-
-                .cbx span:last-child {
-                    padding-left: 8px;
-                }
-
-            .cbx:hover span:first-child {
-                border-color: #506EEC;
-            }
-
-        .inp-cbx:checked + .cbx span:first-child {
-            background: #506EEC;
-            border-color: #506EEC;
-            animation: wave 0.4s ease;
-        }
-
-            .inp-cbx:checked + .cbx span:first-child svg {
-                stroke-dashoffset: 0;
-            }
-
-            .inp-cbx:checked + .cbx span:first-child:before {
-                transform: scale(3.5);
-                opacity: 0;
-                transition: all 0.6s ease;
-            }
-
-        @keyframes wave {
-            50% {
-                transform: scale(0.9);
-            }
-        }
-    </style>
-
-    <script>
-        $(document).ready(function () {
-            //TODO: Initialization logic.
-        });
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container background">
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8"><img class="logo" src="PowerPlan-logo.png"></div>
-            <div class="col-sm-2"></div>
-        </div>
+	<header>
+		<h1 onclick="window.location.reload()">Our Software Development Team</h1>
+	</header>
+	
+	<div class="tabs">
+		<!-- Make tabs responsive with: https://alvarotrigo.com/blog/html-css-tabs/ -->
+		<h2 class="tab-link" onclick="openTab('overview-tab')">Overview</h2>
+		<h2 class="tab-link" onclick="openTab('projects-tab')">Projects</h2>
+		<h2 class="tab-link" onclick="openTab('expertise-tab')">Expertise</h2>
+	  </div>
 
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8"><p class="title">PowerPlan is Coming Soon</p></div>
-            <div class="col-sm-2"></div>
-        </div>
+	<div id="overview-tab" class="tab-content">
+	    <section class="home">
+			<!-- Add graphics and a positive overview about the team here -->
+			<p>Welcome to our team's website. We are a group of skilled software developers who love building innovative solutions.</p>
+		</section>
+	</div>
 
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <p class="intro">
-                    Does your gym have a PowerPlan?</br>
-                    Stay tunned for an awesome planning tool tailored for your gym.
-                </p>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
+	<div id="projects-tab" class="tab-content">
+		<section class="projects">
+			<div class="project-card">
+				<h3>Project: CRM Web Application</h3>
+				<p>Description: Involved in the continued development and maintenance of a CRM web application. The project encompasses customer, contract, and billing management, comprehensive reporting with HTML views and CSV exports, lead aggregation, and follow-up campaigns.</p>
+				<div class="tags">
+					<span>CRM</span>
+					<span>Web Application</span>
+				</div>
+			</div>
 
-        <div class="row">
-            <form onsubmit="return false;">
-                <div class="email-group">
-                    <input name="email" type="text" placeholder="Interested? Leave us your email to get notified" onkeypress="email_changed()" />
+			<div class="project-card">
+				<h3>Project: Existing Application Enhancement</h3>
+				<p>Description: Took part in implementing new modules into an existing application, which included a public-facing API and an anti-fraud system. The modules covered customer and invoice management, as well as anti-fraud detection.</p>
+				<div class="tags">
+					<span>Integration</span>
+					<span>Anti-Fraud</span>
+					<span>API</span>
+				</div>
+			</div>
 
-                    <div class="check-consent" translate="no" style="text-align: left;">
-                        <input class="inp-cbx" id="cbx" type="checkbox" style="display: none;">
-                        <label class="cbx" for="cbx">
-                            <span style="vertical-align: top;">
-                                <svg width="12px" height="10px" viewBox="0 0 12 10">
-                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                                </svg>
-                            </span>
+			<div class="project-card">
+				<h3>Project: Custom Web Applications in PHP (Symfony Framework)</h3>
+				<p>Description: Engaged in developing custom web applications using the Symfony framework. The projects involved stock and stock management, QA ticket management, custom modules for document and quality label registration and tracking, and extensive dashboards with statistics and reporting.</p>
+				<div class="tags">
+					<span>Workflow Software</span>
+					<span>Symfony</span>
+					<span>PHP</span>
+				</div>
+			</div>
 
-                            <span style="width: 90%">
-                                By ticking the checkbox you agree to receive marketing info on the behalf of powerplan.io.
-                                Your personal data will be processed according to powerplan.io personal data policy.
-                                If you decide to take back your personal data manipulation approval, your decision will be
-                                effective only from that moment on.
-                            </span>
-                        </label>
-                    </div>
+			<div class="project-card">
+				<h3>Project: E-commerce Startup Support</h3>
+				<p>Description: Contributed to the maintenance and development of custom web applications in PHP and Wordpress to support the growth of a new e-commerce startup in the food supplement industry. The applications covered order follow-up, reporting, and workout planning.</p>
+				<div class="tags">
+					<span>E-commerce</span>
+					<span>PHP</span>
+					<span>Wordpress</span>
+				</div>
+			</div>
 
-                    <div id="errorMessage">Please provide valid email.</div>
+			<div class="project-card">
+				<h3>Project: Internal CRM Application</h3>
+				<p>Description: Worked on the development of an internal CRM application for managing company operations. The application included customer, contract, and billing management, extensive reporting, lead aggregation, follow-up campaigns, and complex data imports from deprecated systems.</p>
+				<div class="tags">
+					<span>CRM</span>
+					<span>Web Application</span>
+				</div>
+			</div>
 
-                    <p id="result" style="text-shadow: none; ">
-                        <button type="button" onclick="submit_click()">Subscribe</button>
-                    </p>
-                </div>
-            </form>
-        </div>
-    </div>
+			<div class="project-card">
+				<h3>Project: Telenet e-sales</h3>
+				<p>Description: Worked on the Telenet e-sales project for 16 months, focusing on the introduction of and training in agile software development methodologies. Also worked on various other projects for customers, including Flanders’ Drive, VDAB/madewithlove, the Flemish Government, and Trane.</p>
+				<div class="tags">
+					<span>Agile Methodologies</span>
+					<span>E-sales</span>
+				</div>
+			</div>
 
-    <script>
-        function getFormJson() {
-            var formParams = $('form').serializeArray();
-            var result = {};
+			<div class="project-card">
+				<h3>Project: Ventouris Application</h3>
+				<p>Description: Part of a team responsible for maintenance and development of new features for the Java/J2EE Ventouris application.</p>
+				<div class="tags">
+					<span>Java</span>
+					<span>J2EE</span>
+					<span>Software Development</span>
+				</div>
+			</div>
+				
+			<div class="project-card">
+				<h3>Project: Enterprise Software Applications</h3>
+				<p>Description: Overseeing the design, development, and launch of innovative software applications for enterprise customer accounts valued at $400K-$1.3M. Responsibilities include serving as the point of contact for stakeholders, ensuring alignment with business requirements, and identifying opportunities for process automation.</p>
+				<div class="tags">
+					<span>Enterprise Software</span>
+					<span>Project Management</span>
+					<span>Automation</span>
+				</div>
+			</div>
 
-            formParams.forEach(function (it) {
-                result[it.name] = it.value;
-            })
+			<div class="project-card">
+				<h3>Project: Mission-Critical Software Solutions</h3>
+				<p>Description: Serving as the technical project lead for designing and implementing mission-critical software solutions for a $10M investment firm. Projects include the development of new dashboards to enhance data visualization for financial analysts and investment bankers. Responsibilities also involve coordinating quality assurance, business user testing, and implementing user experience improvements.</p>
+				<div class="tags">
+					<span>Financial Software</span>
+					<span>Data Visualization</span>
+					<span>Investment</span>
+				</div>
+			</div>
+				
+			<div class="project-card">
+				<h3>Project: Modern Applications and Microservices</h3>
+				<p>Description: Engineered modern applications using Java, JavaScript, SQL Server, and NoSQL databases. Built innovative microservices and Web Services, including SOA, SOAP, REST, and XML.</p>
+				<div class="tags">
+					<span>Java</span>
+					<span>JavaScript</span>
+					<span>Microservices</span>
+					<span>Web Services</span>
+					<span>SOA</span>
+					<span>SOAP</span>
+					<span>REST</span>
+					<span>XML</span>
+				</div>
+			</div>
 
-            return result;
-        }
+			<div class="project-card">
+				<h3>Project: Cloud-Based Development with Kubernetes</h3>
+				<p>Description: Utilized Cloud Foundry to efficiently build applications on top of Kubernetes, a container orchestration platform.</p>
+				<div class="tags">
+					<span>Cloud Development</span>
+					<span>Kubernetes</span>
+					<span>Container Orchestration</span>
+				</div>
+			</div>
 
-        function email_changed() {
-            document.getElementById("errorMessage").style.visibility = "hidden";
-        }
+			<div class="project-card">
+				<h3>Project: Continuous Integration and Deployment Improvements</h3>
+				<p>Description: Deployed and integrated software engineered by the team and updated integration/deployment scripts to improve continuous integration practices.</p>
+				<div class="tags">
+					<span>Continuous Integration</span>
+					<span>Deployment</span>
+					<span>DevOps</span>
+				</div>
+			</div>
 
-        function submit_click() {
-            let apiUrl = "https://powerplan.azurewebsites.net/api/subscribe";
-            //var formParams = getFormJson();
-            //var requestUrl = apiUrl + "?email=" + formParams.email;
+			<div class="project-card">
+				<h3>Project: User Story Scoping and MVP Requirements</h3>
+				<p>Description: Worked with Product Managers to identify minimum viable product requirements and transformed feature sets into well-scoped user stories for individual team members.</p>
+				<div class="tags">
+					<span>Product Development</span>
+					<span>Agile</span>
+					<span>User Stories</span>
+				</div>
+			</div>
 
-            var errorMessage = document.getElementById("errorMessage");
-            errorMessage.style.visibility = 'hidden';
+			<div class="project-card">
+				<h3>Project: Testing and Engineering Support</h3>
+				<p>Description: Supported testing and engineering processes, ensuring that completed software met client requirements.</p>
+				<div class="tags">
+					<span>Testing</span>
+					<span>Engineering Support</span>
+				</div>
+			</div>
 
-            var emailValue = document.getElementsByName("email")[0].value;
-            var emailValue = emailValue.trim();
-            if (!validateEmail(emailValue)) {
-                errorMessage.style.visibility = 'visible';
-                errorMessage.innerText = 'Please provide valid email.';
-                return;
-            }
+			<div class="project-card">
+				<h3>Project: Maintenance and Process Improvement</h3>
+				<p>Description: Completed maintenance on existing programs and carried out continuous identification, measurement, and improvement of processes. Identified and resolved a significant process bottleneck that boosted coding efficiency by 35%.</p>
+				<div class="tags">
+					<span>Maintenance</span>
+					<span>Process Improvement</span>
+				</div>
+			</div>
 
-            var isAgreed = $('#cbx').is(':checked');
-            if (!isAgreed) {
-                errorMessage.style.visibility = 'visible';
-                errorMessage.innerText = 'Please agree with terms.';
-                return;
-            }
+			<div class="project-card">
+				<h3>Project: Android eCommerce App - Mock Payment System</h3>
+				<p>Description: Developed a mock payment system for an Android eCommerce app as a senior year project.</p>
+				<div class="tags">
+					<span>Android Development</span>
+					<span>eCommerce</span>
+					<span>Mock Payment System</span>
+				</div>
+			</div>
+		</section>
+	</div>
 
-            //TODO: Implement work in progress animation.
-            $('input').prop('disabled', true);
-            $('button').css('visibility', 'hidden');
+	<div id="expertise-tab" class="tab-content">
+		<section class="expertise">
+			<div class="expertise-cards">
+				<div class="expertise-card">
+					<h3>Web Front-end</h3>
+					<ul class="expertise-list">
+						<li>HTML/CSS</li>
+						<li>jQuery</li>
+						<li>NPM</li>
+						<li>Grunt</li>
+						<li>SASS</li>
+						<li>LESS</li>
+						<li>REST</li>
+						<li>VueJS</li>
+					</ul>
+				</div>
 
-            var requestUrl = apiUrl + "?email=" + emailValue;
-            var xhrRequest = {
-                type: "POST",
-                url: requestUrl,
-                timeout: 3 * 60 * 1000
-            }
+				<div class="expertise-card">
+					<h3>Web Back-end</h3>
+					<ul class="expertise-list">
+						<li>Git</li>
+						<li>PHP (versions 5.6-7.2)</li>
+						<li>PHPUnit (versions 4-5)</li>
+						<li>Laravel (versions 4-5)</li>
+						<li>WordPress (version 4)</li>
+						<li>CakePHP</li>
+						<li>Symfony2</li>
+						<li>Symfony3</li>
+						<li>Docker</li>
+						<li>Docker Compose</li>
+						<li>Webpack</li>
+					</ul>
+				</div>
 
-            $.ajax(xhrRequest)
-                .done(function () {
-                    $('#result')
-                        .css('color', 'green')
-                        .text('You have been subscribed successfully.');
-                })
-                .fail(function (jqXHR, textStatus, errorThrown) {
-                    if (jqXHR.status === 409) {
-                        $('#result')
-                            .css('color', 'yellow')
-                            .css('text-shadow', '0px 0px 2px gray')
-                            .text('You are already subscribed.');
-                    } else if (jqXHR.responseText) {
-                        var errorMessage = JSON.parse(jqXHR.responseText).Message
-                        $('#result')
-                            .css('color', 'yellow')
-                            .css('text-shadow', '0px 0px 2px gray')
-                            .text(errorMessage);
-                    } else {
-                        $('#result')
-                            .css('color', 'red')
-                            .css('text-shadow', '0px 0px 2px white')
-                            .text('An error has occurred. Please refresh page and try again.');
-                    }
-                })
-        }
+				<div class="expertise-card">
+					<h3>Database</h3>
+					<ul class="expertise-list">
+						<li>MySQL</li>
+						<li>SQL Server</li>
+						<li>NoSQL databases</li>
+					</ul>
+				</div>
 
-        function validateEmail(email) {
-            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(String(email).toLowerCase());
-        }
-    </script>
+				<div class="expertise-card">
+					<h3>Web Server</h3>
+					<ul class="expertise-list">
+						<li>Apache2 web server</li>
+						<li>Apache web server</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Mobile App Development</h3>
+					<ul class="expertise-list">
+						<li>Android app development</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Cloud Technologies</h3>
+					<ul class="expertise-list">
+						<li>Cloud Foundry</li>
+						<li>Kubernetes</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Continuous Integration/Deployment</h3>
+					<ul class="expertise-list">
+						<li>Continuous integration tools</li>
+						<li>Deployment scripts</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Process Improvement</h3>
+					<ul class="expertise-list">
+						<li>Process improvement methodologies</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Web Services/Microservices</h3>
+					<ul class="expertise-list">
+						<li>Web Services (SOA/SOAP/REST/XML)</li>
+						<li>Microservices</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>API Development</h3>
+					<ul class="expertise-list">
+						<li>OAuth</li>
+						<li>Laravel Passport</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Agile Software Development Methodologies</h3>
+					<ul class="expertise-list">
+						<li>Agile methodologies</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Communication and Messaging</h3>
+					<ul class="expertise-list">
+						<li>Twilio</li>
+						<li>Mailhog</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Java/J2EE Development</h3>
+					<ul class="expertise-list">
+						<li>Java</li>
+						<li>J2EE</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>Testing</h3>
+					<ul class="expertise-list">
+						<li>Codeception</li>
+					</ul>
+				</div>
+
+				<div class="expertise-card">
+					<h3>JavaScript Framework</h3>
+					<ul class="expertise-list">
+						<li>jQuery</li>
+						<li>VueJS</li>
+					</ul>
+				</div>
+		</section>
+	</div>
+	
+    <script src="scripts.js"></script>
 </body>
 </html>

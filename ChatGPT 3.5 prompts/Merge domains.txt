@@ -1,0 +1,60 @@
+Extract technologies from the following lists and group them by type (web front, web back, database etc). The same technology can by part of multiple groups. Start by requesting the lists of technologies. The final result should consists of a list of technology types and their corresponding technologies.
+
+-----
+
+1. Domain: CRM Web Application Development
+   - Technologies: Git, PHP 5.6-7, PHPUnit 4-5, MySQL, Apache2 web server, HTML/CSS, Laravel 4-5, Twilio, jQuery 2.2, Algolia, NPM, Grunt, SASS, REST
+
+2. Domain: Wordpress Front-end Application Maintenance
+   - Technologies: Git, PHP 5.6-7, PHPUnit 4-5, MySQL, Apache2 web server, HTML/CSS, Laravel 5, Wordpress 4, CakePHP, jQuery 2.2, NPM, Grunt, SASS, REST
+
+3. Domain: Calculation and Comparison Systems
+   - Technologies: Git, PHP 5.6-7, PHPUnit 4-5, MySQL, Apache2 web server, HTML/CSS, Laravel 5, Wordpress 4, CakePHP, jQuery 2.2, NPM, Grunt, SASS, REST
+
+4. Domain: API Development
+   - Technologies: Git, Docker, PHP 7.2, Laravel 5, MySQL, Apache web server, SASS, REST, Codeception, OAuth, Laravel Passport, microservices
+
+5. Domain: Anti-fraud System Implementation
+   - Technologies: Git, Docker, PHP 7.2, Laravel 5, MySQL, Apache web server, SASS, REST, Codeception, OAuth, Laravel Passport, microservices
+
+6. Domain: Custom Web Application Development using Symfony Framework
+   - Technologies: Git, Docker, Docker Compose, PHP 7.2, Symfony2, Symfony3, Doctrine, PHPUnit, MySQL, Apache web server, Mailhog, LESS, SASS, REST, Webpack, VueJS, jQuery
+
+7. Domain: E-commerce Web Application Development
+   - Technologies: Git, PHP 7.2, Laravel 5, PHPUnit, MySQL, Webpack, VueJS, jQuery
+
+8. Domain: Agile Software Development Methodologies (Agile Coach)
+   - Technologies: PHP (not specified), Agile methodologies
+
+9. Domain: Java/J2EE Application Maintenance and Development
+   - Technologies: Java, J2EE
+   
+-----
+
+1. Java Development:
+   - Experience: Engineering modern applications with Java.
+   - Technologies: Java.
+
+2. Web Services and Microservices:
+   - Experience: Building innovative microservices and Web Services (SOA/SOAP/REST/XML).
+   - Technologies: Web Services (SOA/SOAP/REST/XML).
+
+3. Cloud Technologies:
+   - Experience: Utilizing Cloud Foundry for efficient building on top of Kubernetes.
+   - Technologies: Cloud Foundry, Kubernetes.
+
+4. Continuous Integration and Deployment:
+   - Experience: Efficiently deploying and integrating software engineered by the team and updating integration/deployment scripts to improve continuous integration practices.
+   - Technologies: Continuous integration tools, deployment scripts.
+
+5. Process Improvement:
+   - Experience: Carrying out continuous identification, measurement, and improvement of processes.
+   - Technologies: Not technology-specific but involves process improvement methodologies.
+
+6. Database Management:
+   - Experience: Working with SQL Server and NoSQL databases.
+   - Technologies: SQL Server, NoSQL databases.
+
+7. Android App Development:
+   - Experience: Building a mock payment system for an Android eCommerce app for a senior year project.
+   - Technologies: Android app development.

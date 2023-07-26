@@ -1,0 +1,90 @@
+1. Freelance web developer at E-Contract BVBA
+   - Duration: 2019-06 to present
+   - Project: CRM Web Application
+   - Description: Continued development and maintenance of a CRM web application. The application includes customer, contract, and billing management, comprehensive reporting with HTML views and CSV exports, lead aggregation, and follow-up campaigns.
+   - Project Type Tags: CRM, Web Application
+
+2. Freelance web developer at Koalaboox BVBA
+   - Duration: 2019-03 to 2019-05
+   - Project: Existing Application Enhancement
+   - Description: Implementation of new modules into an existing application, including a public-facing API and an anti-fraud system. The modules cover customer and invoice management, as well as anti-fraud detection.
+   - Project Type Tags: Integration, Anti-Fraud, API
+
+3. Freelance web developer at Yappa BVBA
+   - Duration: 2018-01 to 2018-07
+   - Project: Custom Web Applications in PHP (Symfony Framework)
+   - Description: Development of custom web applications using the Symfony framework. The projects involve stock and stock management, QA ticket management, custom modules for document and quality label registration and tracking, and extensive dashboards with statistics and reporting.
+   - Project Type Tags: Workflow Software, Symfony, PHP
+
+4. Freelance web developer at Hiddit BVBA
+   - Duration: 2017-06 to 2017-12
+   - Project: E-commerce Startup Support
+   - Description: Maintenance and development of custom web applications in PHP and Wordpress to support the growth of a new e-commerce startup in the food supplement industry. The applications cover order follow-up, reporting, and workout planning.
+   - Project Type Tags: E-commerce, PHP, Wordpress
+
+5. Freelance web developer at E-Contract BVBA
+   - Duration: 2013-10 to 2017-04
+   - Project: Internal CRM Application
+   - Description: Development of an internal CRM application for managing company operations. The application includes customer, contract, and billing management, extensive reporting, lead aggregation, follow-up campaigns, and complex data imports from deprecated systems.
+   - Project Type Tags: CRM, Web Application
+
+6. Agile coach/PHP Developer at Cegeka NV
+   - Duration: 2012-10 to 2015-06
+   - Project: Telenet e-sales
+   - Description: Worked on the Telenet e-sales project for 16 months, focusing on the introduction of and training in agile software development methodologies. Also worked on various other projects for customers, including Flanders’ Drive, VDAB/madewithlove, the Flemish Government, and Trane.
+   - Project Type Tags: Agile Methodologies, E-sales
+
+7. Java Developer at Cegeka NV
+   - Duration: 2012-01 to 2012-09
+   - Project: Ventouris Application
+   - Description: Part of a team responsible for maintenance and development of new features for the Java/J2EE Ventouris application.
+   - Project Type Tags: Java, J2EE, Software Development
+
+-----
+
+1. Senior Software Developer at Cadence Technologies, New York, NY
+   - Duration: October 2017 – Present
+   - Project: Enterprise Software Applications
+   - Description: Overseeing the design, development, and launch of innovative software applications for enterprise customer accounts valued at $400K-$1.3M. Responsibilities include serving as the point of contact for stakeholders, ensuring alignment with business requirements, and identifying opportunities for process automation.
+   - Project Type Tags: Enterprise Software, Project Management, Automation
+
+2. Software Developer at Angel Investments, New York, NY
+   - Duration: June 2013 – October 2017
+   - Project: Mission-Critical Software Solutions
+   - Description: Serving as the technical project lead for designing and implementing mission-critical software solutions for a $10M investment firm. Projects include the development of new dashboards to enhance data visualization for financial analysts and investment bankers. Responsibilities also involve coordinating quality assurance, business user testing, and implementing user experience improvements.
+   - Project Type Tags: Financial Software, Data Visualization, Investment
+
+-----
+
+1. Software Engineer at CirroStratus Inc.
+   - Duration: May 2016 – Present
+   - Projects:
+      - Modern Applications and Microservices
+         - Description: Engineered modern applications using Java, JavaScript, SQL Server, and NoSQL databases. Built innovative microservices and Web Services, including SOA, SOAP, REST, and XML.
+         - Project Type Tags: Java, JavaScript, Microservices, Web Services, SOA, SOAP, REST, XML
+      - Cloud-Based Development with Kubernetes
+         - Description: Utilized Cloud Foundry to efficiently build applications on top of Kubernetes, a container orchestration platform.
+         - Project Type Tags: Cloud Development, Kubernetes, Container Orchestration
+      - Continuous Integration and Deployment Improvements
+         - Description: Deployed and integrated software engineered by the team and updated integration/deployment scripts to improve continuous integration practices.
+         - Project Type Tags: Continuous Integration, Deployment, DevOps
+      - User Story Scoping and MVP Requirements
+         - Description: Worked with Product Managers to identify minimum viable product requirements and transformed feature sets into well-scoped user stories for individual team members.
+         - Project Type Tags: Product Development, Agile, User Stories
+
+2. Software Development Intern at Kell Tech
+   - Duration: September 2015 – May 2016
+   - Projects:
+      - Testing and Engineering Support
+         - Description: Supported Kell Tech's testing and engineering processes, ensuring that completed software met client requirements.
+         - Project Type Tags: Testing, Engineering Support
+      - Maintenance and Process Improvement
+         - Description: Completed maintenance on existing programs and carried out continuous identification, measurement, and improvement of processes. Identified and resolved a significant process bottleneck that boosted coding efficiency by 35%.
+         - Project Type Tags: Maintenance, Process Improvement
+
+3. Education: Bachelor of Computer Science from Carnegie Mellon University
+   - Duration: September 2012 – July 2015
+   - Project:
+      - Android eCommerce App - Mock Payment System
+         - Description: Developed a mock payment system for an Android eCommerce app as a senior year project.
+         - Project Type Tags: Android Development, eCommerce, Mock Payment System

@@ -1,0 +1,10 @@
+I am part of a team of software developers and I need to create a website to present our team to potential customers. The website should contain the following information:
+  - projects that team members have worked in the past, organized by project type
+  - areas of expertise together with prefered technologies (structured as a whole for the entire team)
+  - there should be a home page containing good graphics providing a positive overview about the team
+  
+The website should structure content using HTLM, adjust layout with CSS, and create animations and implement content feedback with Javascript. Implement a minimal website with content similar to the following:
+  - Project Types:  Blockchain, Synchronization, Communications, Audio-Video Communication, Chat
+  - Technologies:
+    - Testing: PHPUnit, Codeception
+	- REST/API: REST, OAuth, Laravel Passport, microservices
