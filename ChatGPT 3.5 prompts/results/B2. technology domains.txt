@@ -1,0 +1,46 @@
+Web Front-end:
+1. HTML/CSS
+2. jQuery
+3. SASS
+4. LESS
+5. VueJS
+6. Webpack
+
+Web Back-end:
+1. PHP (versions 5.6-7.2)
+2. PHPUnit
+3. Laravel (versions 4-5)
+4. WordPress
+5. CakePHP
+6. REST
+7. Codeception
+8. OAuth
+9. Laravel Passport
+10. Symfony2
+11. Symfony3
+12. Java
+13. JavaScript
+
+Database:
+1. MySQL
+2. SQL Server
+3. NoSQL
+4. Doctrine
+
+Version Control:
+1. Git
+
+DevOps/Deployment:
+1. Apache web server
+2. NPM
+3. Grunt
+4. Docker
+5. Docker Compose
+6. Cloud Foundry
+7. Kubernetes
+8. Continuous integration tools
+
+Other:
+1. Microservices
+2. Mailhog
+3. Android app development

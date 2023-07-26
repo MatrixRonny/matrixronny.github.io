@@ -1,0 +1,102 @@
+Tim Janssen
+
+Software Engineer
+
+202-555-0110
+
+tjanssen_zety@gmail.com
+
+linkedin.com/in/tjanssen_zety
+
+ 
+
+Diligent software engineer with 5+ years of experience in commercial application and software development. Eager to join Cyclone Inc. to build innovative and cutting-edge business solutions for the impressive suite of clients within its global reach. In previous roles, slashed downtime by 25% and ensured 98% on-time project completion. Also identified and dealt with a significant process bottleneck that boosted coding efficiency by 35% when resolved.
+
+ 
+
+Experience
+
+ 
+
+Software Engineer
+
+CirroStratus Inc.
+
+May 2016–present
+
+    Engineered modern applications with Java, JavaScript, SQL Server, and No SQL.
+    Built innovative microservices and Web Services (incl. SOA/SOAP/REST/XML).
+    Utilized Cloud Foundry for efficient building on top of Kubernetes.
+    Efficiently deployed and integrated software engineered by team and updated integration/deployment scripts to improve continuous integration practices.
+    Liaised with Product Managers to identify minimum viable product requirements and clearly defined feature sets into well-scoped user stories for individual team members.
+
+Key achievement: 
+
+    Maintained maximum uninterrupted flow of business-critical ops. Cut downtime by 25% and costs of warranty by up to 45%.
+
+ 
+
+Software Development Intern
+
+Kell Tech
+
+September 2015–May 2016
+
+    Supported Kell Tech’s testing and engineering processes.
+    Confirmed that completed software met client requirements.
+    Completed maintenance on existing programs.
+    Worked closely with product team on scope of future projects and innovations.
+    Carried out continuous identification, measurement, and improvement of processes.
+
+Key achievement: 
+
+    Identified and dealt with a significant process bottleneck that boosted coding efficiency by 35% when resolved.
+
+ 
+
+Education
+
+ 
+
+Bachelor of Computer Science
+
+Carnegie Mellon University
+
+September 2012–July 2015
+
+    Heavy focus on full stack engineering with modules on both front and back-end processes.
+    Built a mock payment system for an Android eCommerce app for a senior year project.
+
+ 
+
+Skills
+
+ 
+
+    Software development 
+    Adaptability
+    Teamwork
+    Agile frameworks
+    Interpersonal communication skills
+    Java, HTML, CSS, SQL Server, No SQL
+    Status tracking frameworks (Jira and Rally)
+    Practical knowledge of SQL and database concepts
+    Solid knowledge of cybersecurity principles
+
+ 
+
+Certifications
+
+ 
+
+    Cloudera Certified Software Developer for Apache Hadoop (CCDH)
+    Oracle Java Certifications Associate Professional
+    Puppet Labs Puppet Developer Certification
+
+ 
+
+Languages
+
+ 
+
+    Dutch—Advanced

@@ -1,0 +1,67 @@
+1. Project: CRM Web Application
+   - Description: Involved in the continued development and maintenance of a CRM web application. The project encompasses customer, contract, and billing management, comprehensive reporting with HTML views and CSV exports, lead aggregation, and follow-up campaigns.
+   - Project Type Tags: CRM, Web Application
+
+2. Project: Existing Application Enhancement
+   - Description: Took part in implementing new modules into an existing application, which included a public-facing API and an anti-fraud system. The modules covered customer and invoice management, as well as anti-fraud detection.
+   - Project Type Tags: Integration, Anti-Fraud, API
+
+3. Project: Custom Web Applications in PHP (Symfony Framework)
+   - Description: Engaged in developing custom web applications using the Symfony framework. The projects involved stock and stock management, QA ticket management, custom modules for document and quality label registration and tracking, and extensive dashboards with statistics and reporting.
+   - Project Type Tags: Workflow Software, Symfony, PHP
+
+4. Project: E-commerce Startup Support
+   - Description: Contributed to the maintenance and development of custom web applications in PHP and Wordpress to support the growth of a new e-commerce startup in the food supplement industry. The applications covered order follow-up, reporting, and workout planning.
+   - Project Type Tags: E-commerce, PHP, Wordpress
+
+5. Project: Internal CRM Application
+   - Description: Worked on the development of an internal CRM application for managing company operations. The application included customer, contract, and billing management, extensive reporting, lead aggregation, follow-up campaigns, and complex data imports from deprecated systems.
+   - Project Type Tags: CRM, Web Application
+
+6. Project: Telenet e-sales
+   - Description: Worked on the Telenet e-sales project for 16 months, focusing on the introduction of and training in agile software development methodologies. Also worked on various other projects for customers, including Flanders’ Drive, VDAB/madewithlove, the Flemish Government, and Trane.
+   - Project Type Tags: Agile Methodologies, E-sales
+
+7. Project: Ventouris Application
+   - Description: Part of a team responsible for maintenance and development of new features for the Java/J2EE Ventouris application.
+   - Project Type Tags: Java, J2EE, Software Development
+   
+-----
+
+1. Project: Enterprise Software Applications
+   - Description: Overseeing the design, development, and launch of innovative software applications for enterprise customer accounts valued at $400K-$1.3M. Responsibilities include serving as the point of contact for stakeholders, ensuring alignment with business requirements, and identifying opportunities for process automation.
+   - Project Type Tags: Enterprise Software, Project Management, Automation
+
+2. Project: Mission-Critical Software Solutions
+   - Description: Serving as the technical project lead for designing and implementing mission-critical software solutions for a $10M investment firm. Projects include the development of new dashboards to enhance data visualization for financial analysts and investment bankers. Responsibilities also involve coordinating quality assurance, business user testing, and implementing user experience improvements.
+   - Project Type Tags: Financial Software, Data Visualization, Investment
+
+-----
+
+1. Modern Applications and Microservices
+   - Description: Engineered modern applications using Java, JavaScript, SQL Server, and NoSQL databases. Built innovative microservices and Web Services, including SOA, SOAP, REST, and XML.
+   - Project Type Tags: Java, JavaScript, Microservices, Web Services, SOA, SOAP, REST, XML
+
+2. Cloud-Based Development with Kubernetes
+   - Description: Utilized Cloud Foundry to efficiently build applications on top of Kubernetes, a container orchestration platform.
+   - Project Type Tags: Cloud Development, Kubernetes, Container Orchestration
+
+3. Continuous Integration and Deployment Improvements
+   - Description: Deployed and integrated software engineered by the team and updated integration/deployment scripts to improve continuous integration practices.
+   - Project Type Tags: Continuous Integration, Deployment, DevOps
+
+4. User Story Scoping and MVP Requirements
+   - Description: Worked with Product Managers to identify minimum viable product requirements and transformed feature sets into well-scoped user stories for individual team members.
+   - Project Type Tags: Product Development, Agile, User Stories
+
+5. Testing and Engineering Support
+   - Description: Supported testing and engineering processes, ensuring that completed software met client requirements.
+   - Project Type Tags: Testing, Engineering Support
+
+6. Maintenance and Process Improvement
+   - Description: Completed maintenance on existing programs and carried out continuous identification, measurement, and improvement of processes. Identified and resolved a significant process bottleneck that boosted coding efficiency by 35%.
+   - Project Type Tags: Maintenance, Process Improvement
+
+7. Android eCommerce App - Mock Payment System
+   - Description: Developed a mock payment system for an Android eCommerce app as a senior year project.
+   - Project Type Tags: Android Development, eCommerce, Mock Payment System
