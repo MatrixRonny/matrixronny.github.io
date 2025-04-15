@@ -4,7 +4,7 @@
 
 Note that the GitHub Pages documentation explains things complicated, unstructured and vague.
 
-### Configuration Steps
+### Configuration steps (done)
 1. Disable built-in website hosting from pitWare cPanel.
 2. [Configure pitWare DNS](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain-and-the-www-subdomain-variant) for use with GitHub Pages.
 3. Configure and verify pitWare availability from GitHub Pages.
