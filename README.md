@@ -29,8 +29,12 @@ Ensure that the CNAME record points directly to <user>.github.io or <organizatio
 ### Using Next.js with React
 1. Next.JS allows compiling the React application [into static files](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports)
 2. This [has limitations](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports#supported-features-1), but allows creating a more complex presentation website
-3. Open `next-app` folder and run `npm run build` command to generate the static website in `next-app/out` folder
-4. Completely overwrite `next-static` with the contents from `next-app/out` folder
-5. Make sure GitHub Actions is configured to serve files from `next-static` folder
+3. Open `next-app` folder and run `npm run build` command to generate the static website in `out` folder
+4. Install simple webserver with `npm i -g serve` and use it with `serve out`
+5. Make sure that the Next.js welcome page is displayed properly, not just text
+6. Completely overwrite `next-static` with the contents from `next-app/out` folder
+7. Make sure GitHub Actions is configured to serve files from `next-static` folder
 
-It takes a few minutes for https://www.pitware.tech to become available after changing the website contents.
+It takes a few minutes for https://www.pitware.tech to become available after changing the website contents. Note that opening `index.html` from the browser directly does not work because of cross-site requests.
+
+More information about this development method can be found at [Geeks4Geeks](https://www.geeksforgeeks.org/next-js-static-html-export/)
